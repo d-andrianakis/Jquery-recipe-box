@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Recipe Box</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12" id="header">
+      <h1>Recipe box - FCC</h1>
+      <h2>A pen by Dimitris Andrianakis</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3" id="recipe-column">
+      <h3>Recipes</h3><hr>
+      <div id = "recipes"></div>
+      <button class="function-buttons" id="button" value="Add Recipe" data-toggle="tooltip" title="Add recipe!"><i class="fa fa-plus-square fa-2x"></i></button>
+      <button class="function-buttons" id="delete-recipe" value="delete" data-toggle="tooltip" title="Delete current recipe"><i class="fa fa-trash fa-2x"></i></button>
+      <button class="function-buttons" id="edit-recipe" value="edit" data-toggle="tooltip" title="Edit recipe"><i class="fa fa-edit fa-2x"></i></button>
+      <!--
+      <input id="button" type="button" value="Add Recipe">
+      -->
+      <div id="dialog" title="Add Recipe">
+        <form action="" method="post">
+          <label>Recipe name :</label>
+          <textarea id="recipe-name-form" name="name" type="text" placeholder = "Give your recipe a name!">
+          </textarea>
+          <label>Ingredients :</label>
+          <textarea id="ingredients-form" name="ingredients" type="text" placeholder="Enter each ingredient followed by a comma"></textarea>
+          <label>Instructions :</label>
+          <textarea id="instructions-form" name="instructions" type="text" placeholder="Enter each step followed by a comma"></textarea>
+          <input id="submit" type="submit" value="Submit">
+        </form>
+      </div>
+      <div id="edit-dialog" title="Edit Recipe">
+        <form action="" method="post">
+          <label>Recipe name :</label>
+          <textarea id="recipe-name-form-edit" name="name" type="text" placeholder = "Give your recipe a name!">
+          </textarea>
+          <label>Ingredients :</label>
+          <textarea id="ingredients-form-edit" name="ingredients" type="text" placeholder="Enter each ingredient followed by a comma"></textarea>
+          <label>Instructions :</label>
+          <textarea id="instructions-form-edit" name="instructions" type="text" placeholder="Enter each step followed by a comma"></textarea>
+          <input id="submit-edit" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <div class="col-sm-9" id="instructions-ingredients-column">
+      <div class="row">
+        <div class="col-6 col-sm-12" id="ingredients-container">
+          <h3>Ingredients</h3>
+          <ul id="ingredients">
+            
+          </ul>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12" id="instructions-container">
+          <h3>Instructions</h3> 
+          <ul id="instructions"></ul>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- partial -->
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+  font-family : 'Indie Flower', cursive;
+  font-size : 1.7em;
+}
+#header {
+}
+#dialog {
+  font-size : 0.5em;
+  width : 40em;
+}
+
+#edit-dialog {
+  font-size : 0.5em;
+  width : 40em;
+}
+
+#recipe-name-form {
+  
+}
+#ingredients-form {
+  height :10em;
+}
+#recipe-column {
+  border : solid 1px #000000;
+  border-radius : 10px;
+}
+.recipe-buttons {
+  font-family : 'Indie Flower', cursive;
+  font-size : 1.0em;
+  background : #FFFFFF;
+  padding-top : 10px;
+  border : none;
+  outline : none !important;
+}
+.function-buttons {
+  size : 30px;
+  background : #FFFFFF;
+  padding-top : 10px;
+  border : none;
+}
+#instructions-ingredients-column{
+  border : solid 1px #000000;
+  border-radius : 10px;
+  padding-left : 30px;
+}
